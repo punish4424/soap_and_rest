@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class SoapConfig(AppConfig):
-    name = 'soap'
+class TaskConfig(AppConfig):
+    name = 'task'

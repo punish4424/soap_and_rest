@@ -5,6 +5,7 @@
 
 # Documentation build
 build/
+venv/
 
 # Misc
 *.db

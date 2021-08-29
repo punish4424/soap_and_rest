@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
                 ('address1', models.CharField(max_length=100)),
                 ('address2', models.CharField(blank=True, max_length=100, null=True)),
                 ('address3', models.CharField(blank=True, max_length=100, null=True)),
-                ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='address', to='soap.customer')),
+                ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='address', to='task.customer')),
             ],
             options={
                 'verbose_name': 'Customer home address',
@@ -51,7 +51,7 @@ class Migration(migrations.Migration):
                 ('area_name', models.CharField(max_length=100)),
                 ('branch_name', models.CharField(max_length=100)),
                 ('branch_code', models.CharField(max_length=100)),
-                ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='branch_data', to='soap.customer')),
+                ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='branch_data', to='task.customer')),
             ],
             options={
                 'verbose_name': 'Branch data',
