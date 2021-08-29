@@ -26,6 +26,11 @@ class XMLtoJSONAPIView(APIView):
 class RestAPIView(APIView):
     serializer_class = CustomerSerializer
 
+    def get(self, request, *args, **kwargs):
+        customers = Customer.objects.all()
+        serializer_data = self.serializer_class(customers, many=True)
+        return Response(serializer_data.data)
+
     def post(self, request, *args, **kwargs):
         input_file = request.FILES["input_file"]
         decoded_file = input_file.read().decode("utf-8")
