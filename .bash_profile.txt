@@ -1,1 +1,1 @@
-TASK_KEY = "django-insecure-vd5v6h%g@=7lp)_)i2wvt3tqs8n9vaz-uw(nl6j*l^l_&rn*98"
+export TASK_KEY = "django-insecure-vd5v6h%g@=7lp)_)i2wvt3tqs8n9vaz-uw(nl6j*l^l_&rn*98"
